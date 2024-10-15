@@ -1,9 +1,17 @@
-根据题目我们需要创建父类Animal，其包含两个抽象方法（abstract)cry()和getAnimalName(）；分别用于后续子类中对叫声和名字的输出；abstract使方法可不含方法体。
-然后通过extends创建子类Dog和Cat，在子类中对父类抽象函数进行重写修改。对父类的方法分别返回动物声音和动物名称。
-创建Simulator类，在此类中创建一个方法playsound(Animal animal)，其中变量animal的类型为Animal.在此方法中调用system.out.print1n(）输出"某某动物的叫声是某某某"。
-创建主类Application，主类中通过构造函数初始化simulator，类型为Simulator。调用Simulator类中方法playsound，变量为通过构造方法初始化的new Dog(）和new Cat()。
 
-代码如下
+根据题目我们需要创建父类Animal，其包含两个抽象方法（abstract)cry()和getAnimalName(）；分别用于后续子类中对叫声和名字的输出；abstract使方法可不含方法体。 
+
+ 
+然后通过extends创建子类Dog和Cat，在子类中对父类抽象函数进行重写修改。对父类的方法分别返回动物声音和动物名称。 
+
+ 
+创建Simulator类，在此类中创建一个方法playsound(Animal animal)，其中变量animal的类型为Animal.在此方法中调用system.out.print1n(）输出"某某动物的叫声是某某某"。 
+
+ 
+创建主类Application，主类中通过构造函数初始化simulator，类型为Simulator。调用Simulator类中方法playsound，变量为通过构造方法初始化的new Dog(）和new Cat()。 
+
+ 
+···java
 abstract class Animal {                         //抽象类
     public abstract String cry();               // 抽象方法，要求子类实现具体动物的叫声
     public abstract String getAnimalName();     // 抽象方法，要求子类实现获取动物名称
@@ -45,3 +53,4 @@ public class Application {                      //主类Application
         simulator.playSound(new Cat());         //输出"猫的叫声：喵喵喵"
     }
 }
+```
