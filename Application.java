@@ -34,6 +34,7 @@ class Simulator {                               //Simulator类，用于包含pla
 public class Application {                      //主类Application
     public static void main(String[] args) {    //主函数main
         Simulator simulator = new Simulator();  //通过Simulator类构造方法，初始化变量simulator，用于输出
+        //Dog dog = new Dog()
         simulator.playSound(new Dog());         //输出"狗的叫声：汪汪汪"
         simulator.playSound(new Cat());         //输出"猫的叫声：喵喵喵"
     }
