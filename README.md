@@ -11,7 +11,7 @@
 创建主类Application，主类中通过构造函数初始化simulator，类型为Simulator。调用Simulator类中方法playsound，变量为通过构造方法初始化的new Dog(）和new Cat()。 
 
  
-···java
+```java
 abstract class Animal {                         //抽象类
     public abstract String cry();               // 抽象方法，要求子类实现具体动物的叫声
     public abstract String getAnimalName();     // 抽象方法，要求子类实现获取动物名称
